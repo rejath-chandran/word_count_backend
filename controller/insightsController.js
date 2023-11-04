@@ -1,6 +1,6 @@
 export const GetAllinsights=async(req,res,next)=>{
  res.json({
-    hey:true
+    apitrue:true
  })
 }
 
