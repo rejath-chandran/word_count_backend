@@ -3,9 +3,10 @@ import {GetAllinsights,CreateInsight, DeleteInsight, UpdateInsight} from '../con
 
 const router=Router()
 
-router.get('/insights',GetAllinsights)
+router.get('/insights/:id',GetAllinsights)
 router.post('/insights',CreateInsight)
-router.delete('/insights/:id',DeleteInsight)
-router.patch('/insights/:id',UpdateInsight)
+
+router.delete('/insights',DeleteInsight)
+router.patch('/insights',UpdateInsight)
 
 export default router
